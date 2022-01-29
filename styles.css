@@ -1,0 +1,309 @@
+body{
+    background-color: hsl(226, 43%, 10%);
+}
+
+.main_container{
+    display: grid;
+    grid-template-areas:
+    'main work play study'
+    'main exercise social selfcare';
+    gap: 2px;
+    margin: auto;
+    margin-top: 46px;
+    width: 1400px;
+}
+
+.avatar{
+    border: 3px solid;
+    border-radius: 50%;
+    border-color: white;
+    width: 100px;
+    margin: 30px 0 45px 20px;
+}
+
+.avatar_container{
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 20px;
+    width: 300px;
+    height: 450px;
+    padding: 10px;
+}
+
+.sub_container{
+    grid-area: main;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 20px;
+    width: 320px;
+    height: 640px;
+    padding: 0px;
+}
+
+.info{
+    margin: 0 0 0 20px;
+    font-family: 'Rubik';
+    color: hsl(236, 100%, 87%);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.info1{
+    margin: 25px 0 0 30px;
+    font-family: 'Rubik';
+    color: hsl(235, 45%, 61%);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.info1:hover{
+    cursor: pointer;
+    filter: brightness(200%);
+}
+
+.last_week{
+    position: relative;
+    top: 65px;
+    margin: 0 0 0 35px;
+    font-family: 'Rubik';
+    color: hsl(236, 100%, 87%);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.tags{
+    position: relative;
+    top: 35px;
+    margin: 0 0 0 35px;
+    font-family: 'Rubik';
+    color: hsl(236, 100%, 87%);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.txt_name{
+    margin: 10px 0 0 20px;
+}
+
+.main_info{
+    font-family: 'Rubik';
+    color: white;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.txt_hrs{
+    position: relative;
+    top: 55px;
+    margin: 15px 0 0 35px;
+}
+
+.work_container div img{
+    width: 5px;
+    height: 5px;
+}
+.row{
+    position: relative;
+    top: 8px;
+    left: 35px;
+}
+
+.column {
+    float: left;
+    width: 3%;
+}
+ 
+.row:hover{
+    cursor: pointer;
+    filter: contrast(200%)
+}
+
+.img_work{
+    grid-area: work;
+    background-color: hsl(15, 100%, 70%);
+}
+
+.img_play{
+    grid-area: play;
+    background-color: hsl(195, 74%, 62%);
+}
+
+.img_study{
+    grid-area: study;
+    background-color: hsl(348, 100%, 68%);
+}
+
+.img_exercise{
+    grid-area: exercise;
+    background-color: hsl(145, 58%, 55%);
+}
+
+.img_social{
+    grid-area: social;
+    background-color: hsl(264, 64%, 52%);
+}
+
+.img_self-care{
+    grid-area: selfcare;
+    background-color: hsl(43, 84%, 65%);
+}
+
+.img_tag{
+    margin-top: 7px;
+    border-radius: 20px;
+    width: 300px;
+    height: 250px;
+}
+
+.img_tag img{
+    margin: 0;
+    position: relative;
+    top: 2px;
+    margin-left: 200px;
+    width: 80px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.work_container{
+    border-radius: 20px;
+    height: 250px;
+    background-color: hsl(235, 46%, 20%);
+}
+
+.work_container:hover{
+    background-color: hsl(234, 54%, 28%);
+    cursor: pointer;
+}
+
+.tag_container{
+    border-radius: 20px;
+    height: 200px;
+}
+
+@media only screen and (max-width: 600px){
+    .main_container{
+        display: grid;
+        grid-template-areas:
+        'main'
+        'work'
+        'play'
+        'study'
+        'exercise'
+        'social'
+        'selfcare';
+        gap: 2px;
+        margin: auto;
+        margin-top: 46px;
+        width: 350px;
+    }
+
+    .info{
+        font-size: 4vw;
+    }
+
+    .main_info{
+        font-size: 6vw;
+        margin-top: 2px;
+    }
+
+    .img_tag{
+        width: 300px;
+        height: 130px;
+        margin-bottom: 65px;
+        position: relative;
+        left: 15px;
+    }
+
+    .work_container{
+        height: 130px;
+    }
+
+    .tags{
+        position: relative;
+        top: 25px;
+        margin: 0 0 0 25px;
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .row{
+        position: relative;
+        top: 1px;
+        left: 35px;
+    }
+
+    .txt_hrs{
+        position: relative;
+        top: 20px;
+        margin: 15px 0 0 25px;
+        font-size: 36px;
+    }
+
+    .last_week{
+        position: relative;
+        top: -8px;
+        left: 125px;
+        font-size: 14px;
+        margin: 0 0 0 35px;
+    }
+
+    .img_tag img{
+        height: 30px;
+    }
+    
+    .img_work{
+        grid-area: work;
+    }
+    .img_play{
+        grid-area: play;
+    }
+    .img_study{
+        grid-area: study;
+    }
+    .img_exercise{
+        grid-area: exercise;
+    }
+    .img_social{
+        grid-area: social;
+    }
+    .img_selfcare{
+        grid-area: selfcare;
+    }
+
+    .sub_container{
+        margin: 30px 10px 0 10px;
+        width: 310px;
+        height: 200px;
+        padding: 0px;
+        margin-bottom: 15px;
+    }
+
+    .avatar{
+        margin-top: 33px;
+        border: 3px solid;
+        border-radius: 50%;
+        border-color: white;
+        width: 80px;
+        display: inline;
+    }
+
+    .avatar_container p{
+        position: relative;
+        width: 60%;
+        top: -115px;
+        left: 100px;
+    }
+    
+    .avatar_container{
+        width: 310px;
+        height: 150px;
+        padding: 0px;
+    }
+
+    .info1{
+        display: inline-block;
+        margin: 0;
+        margin-top: 13px;
+        margin-left: 35px;
+        margin-right: 1px;
+    }
+}
